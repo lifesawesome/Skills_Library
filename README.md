@@ -12,8 +12,6 @@ Project skills are stored in this repository under:
 
 - `.github/skills`
 
-This repository standard is intentionally limited to `.github/skills` only.
-
 ## About This Repository
 
 This repository contains enterprise-grade skills designed to guide teams on software architecture, development practices, governance standards, and operational excellence. Whether you're architecting backend services, building frontend applications, managing change processes, or implementing platform engineering patterns, these skills provide repeatable guidance aligned with industry best practices.
