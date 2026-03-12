@@ -1,22 +1,24 @@
 # Skills Library
 
-A comprehensive collection of skills that enhance Claude's specialized capabilities across architecture, development, governance, and operational tasks.
+A comprehensive collection of project skills for architecture, development, governance, and operational tasks.
 
 ## What Are Skills?
 
-Skills are folders of instructions, scripts, and resources that Claude loads dynamically to improve performance on specialized tasks. Skills teach Claude how to complete specific tasks in a repeatable way, whether that's designing robust backend systems, building scalable frontend architectures, or implementing governance and operational best practices.
+Skills are folders of instructions, scripts, and resources loaded dynamically to improve performance on specialized tasks. Skills help teams complete recurring work in a repeatable way, whether that is designing backend systems, building frontend architectures, or applying governance and operational practices.
 
-For more information about Claude Skills:
-- [What are skills?](https://support.anthropic.com/en/articles/9541729-what-are-skills)
-- [Using skills in Claude](https://support.anthropic.com/en/articles/9541730-using-skills-in-claude)
-- [How to create custom skills](https://support.anthropic.com/en/articles/9541731-how-to-create-custom-skills)
-- [Agent Skills Specification](https://github.com/anthropics/anthropic-sdk-python/tree/main/examples/agent_skills)
+## Project Skills Location
+
+Project skills are stored in this repository under:
+
+- `.github/skills`
+
+This repository standard is intentionally limited to `.github/skills` only.
 
 ## About This Repository
 
 This repository contains enterprise-grade skills designed to guide teams on software architecture, development practices, governance standards, and operational excellence. Whether you're architecting backend services, building frontend applications, managing change processes, or implementing platform engineering patterns, these skills provide repeatable guidance aligned with industry best practices.
 
-Each skill is self-contained in its own folder with a `SKILL.md` file containing the instructions and metadata that Claude uses. Browse through these skills to understand different patterns and approaches, or leverage them directly in your Claude workflow.
+Each skill is self-contained in its own folder with a `SKILL.md` file containing instructions and metadata. Browse through these skills to understand different patterns and approaches, then adapt them to your team's workflow.
 
 ## Available Skills
 
@@ -68,45 +70,41 @@ Each skill is self-contained in its own folder with a `SKILL.md` file containing
 
 ## How to Leverage These Skills
 
-### In Claude.ai
-1. **Upload Skills**: If using paid Claude plans, you can upload custom skills directly
-2. **Reference Skills**: Mention the skill name or folder when asking Claude to help with specific tasks
-3. **Combine Skills**: Multiple skills can be active simultaneously to provide comprehensive guidance
-
-### In Claude Code or API
-1. **Register Repository**: Register this repository as a plugin marketplace in Claude Code
-2. **Install Skills**: Select and install specific skill sets relevant to your work
-3. **Invoke Skills**: Reference skills directly in prompts to activate specialized behavior
-
 ### In Your Workflow
-- **Architecture Reviews**: Use frontend and backend architecture skills when designing systems
-- **Code Reviews**: Activate review baseline skills to ensure consistent quality standards
-- **Release Management**: Use release and change management skills before deployments
-- **Planning**: Leverage planning skills for project breakdown and capacity management
-- **Testing**: Apply testing strategy skills when designing test approaches
+- **Architecture Reviews**: Use frontend and backend architecture skills when designing systems.
+- **Code Reviews**: Use review baseline skills to ensure consistent quality standards.
+- **Release Management**: Use release and change management skills before deployments.
+- **Planning**: Leverage planning skills for project breakdown and capacity management.
+- **Testing**: Apply testing strategy skills when designing test approaches.
+
+### Team Adoption Model
+1. **Store skills in `.github/skills`**: Keep all project skills in a single, version-controlled location.
+2. **Reference by folder name**: Align requests and reviews to the corresponding skill folder.
+3. **Compose multiple skills**: Combine architecture, testing, and governance skills for end-to-end delivery.
+4. **Review and refine regularly**: Update skill instructions as standards and team practices evolve.
 
 ## Repository Structure
 
 ```
-skills/
-├── README.md (this file)
-├── SKILL-PATTERNS-AND-ENHANCEMENT-GUIDE.md
-├── java-backend-development/
-│   └── SKILL.md
-├── dotnet-backend-development/
-│   └── SKILL.md
-├── react-frontend-architecture/
-│   └── SKILL.md
-├── angular-frontend-architecture/
-│   └── SKILL.md
-├── [... additional skills ...]
-└── [... skills with supporting scripts ...]
+.github/
+└── skills/
+	├── SKILL-PATTERNS-AND-ENHANCEMENT-GUIDE.md
+	├── java-backend-development/
+	│   └── SKILL.md
+	├── dotnet-backend-development/
+	│   └── SKILL.md
+	├── react-frontend-architecture/
+	│   └── SKILL.md
+	├── angular-frontend-architecture/
+	│   └── SKILL.md
+	├── [... additional skills ...]
+	└── [... skills with supporting scripts ...]
 ```
 
 Each skill folder contains:
-- **SKILL.md** - Core skill definition with YAML frontmatter (name, description) and markdown instructions
-- **scripts/** (optional) - PowerShell or other scripts that support the skill's guidance
-- **resources/** (optional) - Templates, examples, or reference materials
+- **SKILL.md** - Core skill definition with YAML frontmatter (name, description) and markdown instructions.
+- **scripts/** (optional) - PowerShell or other scripts that support the skill's guidance.
+- **resources/** (optional) - Templates, examples, or reference materials.
 
 ## Skill Patterns and Enhancements
 
@@ -121,7 +119,7 @@ See [SKILL-PATTERNS-AND-ENHANCEMENT-GUIDE.md](./skills/SKILL-PATTERNS-AND-ENHANC
 ## Using Skills Effectively
 
 ### Tips for Best Results
-1. **Be Specific**: Reference the exact skill name when asking Claude for help
+1. **Be Specific**: Reference the exact skill name when requesting help.
 2. **Provide Context**: Include project details, team structure, and constraints
 3. **Combine Skills**: Use complementary skills together for comprehensive guidance (e.g., API Design + Frontend Architecture)
 4. **Iterate**: Use skills in an interactive dialogue to refine outputs and get more targeted advice
@@ -143,7 +141,7 @@ This repository represents enterprise best practices and is maintained for demon
 
 ## Disclaimer
 
-These skills are provided for demonstration and educational purposes only. While some of these capabilities may be available in Claude, the implementations and behaviors you receive from Claude may differ from what is shown in these skills. These skills are meant to illustrate patterns and possibilities. Always test skills thoroughly in your own environment before relying on them for critical tasks.
+These skills are provided for demonstration and educational purposes only. Implementations and behaviors may differ from what is shown in these skills depending on your runtime, tools, and configuration. These skills are meant to illustrate patterns and possibilities. Always test skills thoroughly in your own environment before relying on them for critical tasks.
 
 ## License
 
